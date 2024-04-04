@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div>
+            <h3>HOME</h3>
+            <h4 class="score-styling" id="score-home">0</h4>
+            <div class="btn-styling">
+                <button onclick="onePointHome()">+1</button>
+                <button onclick="twoPointHome()">+2</button>
+                <button onclick="threePointHome()">+3</button>
+            </div>
+        </div>
+        <button id="reset-btn" onclick="reset()">RESET</button>
+        <div>
+            <h3>GUEST</h3>
+            <h4 id="score-away" class="score-styling">0</h4>
+            <div class="btn-styling">
+                <button onclick="onePointAway()">+1</button>
+                <button onclick="twoPointAway()">+2</button>
+                <button onclick="threePointAway()">+3</button>
+            </div>
+        </div>
+    </div>
+    <script src="/app.js" defer></script>
+</body>
+
+</html>
